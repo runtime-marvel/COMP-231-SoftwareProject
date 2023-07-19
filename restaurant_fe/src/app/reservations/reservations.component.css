@@ -1,0 +1,69 @@
+.container-fluid
+{
+    background-color: white;
+    color: black;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2.5px rgb(55,215,210);
+} 
+
+.container-fluid-2
+{
+    background-color: rgb(23, 112, 110);
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px black;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-position: absolute;
+}
+
+.description
+{
+   text-transform: uppercase;
+   background-position: absolute;
+}
+
+/* 
+  margin to align locations button
+*/
+.margin-top
+{
+    margin: 1px;
+}
+.paddingX2
+{
+ padding: 45vh;
+}
+
+.container-fluid-hours
+{
+    text-transform: uppercase;
+    font-weight: lighter;
+    position: absolute;
+    background-position: absolute;
+}
+
+.extraThings 
+{
+    background-color: rgb(23, 112, 110);
+    color: white;
+    text-shadow: 0.5px 0.5px 0.5px black;
+    padding: 15vh;
+}
+
+.btn-primary
+{
+    font-weight: lighter;
+}
+
+.btn-primary:hover 
+{
+    border: 2px solid turquoise;
+}
+
+.form-row
+{
+    position: absolute;
+    margin-top: 25px;
+}
+
+

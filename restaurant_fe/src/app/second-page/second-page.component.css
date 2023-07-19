@@ -1,0 +1,29 @@
+.container-fluid
+{
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2.5px rgb(55,215,210);
+    margin-bottom: -7.75px;
+}
+
+.container-fluid-2
+{
+    background-color: bisque;
+    min-width: 100vw;
+    min-height: 100vh;
+    text-transform: uppercase;
+}
+
+.paddingBodyText
+{
+    padding: 30vh;
+}
+
+.buttonDifferentiator
+{
+    padding: 15vh;
+    background-color: bisque;
+    text-shadow: 0.25px 0.25px 0.25px black;
+    margin-bottom: 0px;
+}
