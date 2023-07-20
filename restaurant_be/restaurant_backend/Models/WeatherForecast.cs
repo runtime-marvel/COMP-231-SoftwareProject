@@ -1,4 +1,4 @@
-namespace restaurant_backend
+namespace restaurant_backend.Models
 {
     public class WeatherForecast
     {

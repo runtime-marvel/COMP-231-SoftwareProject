@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using restaurant_backend.Models;
 
 namespace restaurant_backend.Controllers
 {
