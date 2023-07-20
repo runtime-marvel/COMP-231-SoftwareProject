@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using restaurant_backend.Models;
+
 namespace restaurant_backend
 {
     public class Program
@@ -9,6 +12,8 @@ namespace restaurant_backend
             // Add services to the container.
 
             builder.Services.AddControllers();
+            builder.Services.AddDbContext<UserContext>(opt =>
+            opt.UseInMemoryDatabase("RestaurantUsers"));
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
@@ -18,7 +23,8 @@ namespace restaurant_backend
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
-                app.UseSwagger();
+               // app.UseDeveloperExceptionPage();
+               app.UseSwagger();
                 app.UseSwaggerUI();
             }
 
