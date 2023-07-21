@@ -2,10 +2,12 @@
 {
     public class User
     {
-        public string? Id { get; set; }
+        public int UserId { get; set; }
         public string UserName { get; set; } = string.Empty;
-        public byte[] PasswordHash { get; set; }
-        public byte[] PasswordSalt { get; set; }
+        public string? Password { get; set; }
+        public DateTime? CreatedDate { get; set; }
+        // public byte[] PasswordHash { get; set; }
+      //  public byte[] PasswordSalt { get; set; }
 
     }
 }
