@@ -9,6 +9,7 @@ using System.Text;
 
 namespace restaurant_backend.Controllers
 {
+    //source: https://www.c-sharpcorner.com/article/how-to-implement-jwt-authentication-in-web-api-using-net-6-0-asp-net-core/
     [Route("api/token")]
     [ApiController]
     public class TokensController : ControllerBase
