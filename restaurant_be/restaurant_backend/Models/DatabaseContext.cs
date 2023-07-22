@@ -2,45 +2,19 @@
 
 namespace restaurant_backend.Models
 {
-    //source: https://www.c-sharpcorner.com/article/how-to-implement-jwt-authentication-in-web-api-using-net-6-0-asp-net-core/
-    public partial class DatabaseContext:DbContext
+    public class DatabaseContext : DbContext
     {
-        public DatabaseContext()
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
+            optionsBuilder.UseInMemoryDatabase(databaseName: "UserDb");
         }
+        //public DatabaseContext(DbContextOptions<DatabaseContext> options) : base(options)
+        //{
 
-        public  DatabaseContext(DbContextOptions<DatabaseContext> options)
-            : base(options)
-        {
-        }
+        //}
 
-        public virtual DbSet<Customer>? Customers { get; set; }
-        public virtual DbSet<User>? Users { get; set; }
+        public DbSet<User> Users => Set<User>();
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<User>(entity =>
-            {
-                entity.HasNoKey();
-                entity.ToTable("UserInfo");
-                entity.Property(e => e.UserId).HasColumnName("UserId");
-                entity.Property(e => e.UserName).HasMaxLength(30).IsUnicode(false);
-                entity.Property(e => e.Password).HasMaxLength(20).IsUnicode(false);
-                entity.Property(e => e.CreatedDate).IsUnicode(false);
-            });
-            modelBuilder.Entity<Customer>(entity =>
-            {
-                entity.ToTable("Customer");
-                entity.Property(e => e.CustomerId).HasColumnName("CustomerId");
-                entity.Property(e => e.Name).HasMaxLength(100).IsUnicode(false);
-                entity.Property(e => e.Email).HasMaxLength(50).IsUnicode(false);
-                entity.Property(e => e.Address).HasMaxLength(50).IsUnicode(false);
-            });
-            OnModelCreatingPartial(modelBuilder);
-
-
-                // base.OnModelCreating(modelBuilder);
-            }
-        partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
     }
 }
