@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "68QEct+ttPiE8Wijj9hRpJZ9ZAx+cibwLim5SmpnIM2yUK3LFJC7DhC5a2MJPauFr1NEp6RqgY3l2YjubCEZVA==",
+  "dgSpecHash": "55xQSQ0ZSolwkEpImJZi3UgAevTLSqUpACJLCsXdXwZDQDS5a9A9+w0meYO5a+qAOfN90BnQCc8WiPR1n6IZgg==",
   "success": true,
   "projectFilePath": "C:\\Users\\okeef\\Documents\\01School\\sem5\\softproj\\groupProj\\COMP-231-SoftwareProject-Team-5\\restaurant_be\\restaurant_backend\\restaurant_backend.csproj",
   "expectedPackageFiles": [
@@ -107,6 +107,7 @@
     "C:\\Users\\okeef\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\okeef\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\okeef\\.nuget\\packages\\microsoft.openapi\\1.3.1\\microsoft.openapi.1.3.1.nupkg.sha512",
+    "C:\\Users\\okeef\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.18.1\\microsoft.visualstudio.azure.containers.tools.targets.1.18.1.nupkg.sha512",
     "C:\\Users\\okeef\\.nuget\\packages\\microsoft.visualstudio.debugger.contracts\\17.2.0\\microsoft.visualstudio.debugger.contracts.17.2.0.nupkg.sha512",
     "C:\\Users\\okeef\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration\\6.0.15\\microsoft.visualstudio.web.codegeneration.6.0.15.nupkg.sha512",
     "C:\\Users\\okeef\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.core\\6.0.15\\microsoft.visualstudio.web.codegeneration.core.6.0.15.nupkg.sha512",
