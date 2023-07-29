@@ -7,13 +7,17 @@ import { LocationsComponent } from './locations/locations.component';
 import { AboutComponent } from './about/about.component';
 import { MenuComponent } from './menu/menu.component';
 import { CheckoutComponent } from './checkout/checkout.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 const routes: Routes =
   [{ path: 'reservations', component: ReservationsComponent },
   /*
   to first be able to get to landingcomponent and have nothing show up, have to name the path as blank
   */
-  { path: '', component: LandingComponent },
+    { path: '', component: LandingComponent },
+    { path: 'login', component: LoginComponent },
+    { path: 'register', component: RegisterComponent },
   { path: 'locations', component: LocationsComponent },
   { path: 'about', component: AboutComponent },
   { path: 'menu', component: MenuComponent },

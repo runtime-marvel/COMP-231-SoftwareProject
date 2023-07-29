@@ -13,6 +13,8 @@ import { ReservationsComponent } from './reservations/reservations.component';
 import { LocationsComponent } from './locations/locations.component';
 import { SecondPageComponent } from './second-page/second-page.component';
 import { CheckoutComponent } from './checkout/checkout.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,7 @@ import { CheckoutComponent } from './checkout/checkout.component';
     ReservationsComponent,
     LocationsComponent,
     SecondPageComponent, 
-    CheckoutComponent
+    CheckoutComponent, LoginComponent, RegisterComponent
   ],
   imports: [
     BrowserModule,

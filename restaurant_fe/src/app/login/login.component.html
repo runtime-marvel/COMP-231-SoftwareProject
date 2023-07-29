@@ -1,0 +1,44 @@
+
+<div class="container">
+
+    <div class="container-fluid text-center">
+        <!-- Login form title -->
+        <h1>Login Form</h1>
+    </div>
+
+    <div class="container-fluid-2 paddingX2 text-center align-items-center">
+
+        <!-- Login Form -->
+        <form (submit)="login()">
+            <!-- Username field -->
+            <div class="form-row clearfix text-center">
+                <div class="col-auto">
+                    <input ref-login type="text" class="form-control" placeholder="Username"
+                           [(ngModel)]="username">
+                </div>
+            </div>
+            <!-- Password field -->
+            <div class="form-row clearfix">
+                <div class="col-auto">
+                    <input ref-login type="password" class="form-control" placeholder="Password"
+                           [(ngModel)]="password">
+                </div>
+            </div>
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary" [attr.disabled]="!username || !password">
+                Login
+            </button>
+
+            <p><a href="register"> Forgot password </a></p>
+        </form>
+
+    </div>
+    <div class="container-fluid text-center">
+        <!-- Login form title -->
+        <h3 ><a href="register" > Signup </a></h3>
+    </div>
+</div>
+
+
+<!--END OF FORM FOR RESERVATIONS-->
+<!--reservations (page 1) (div tag to go with ngIf for first page)-->
