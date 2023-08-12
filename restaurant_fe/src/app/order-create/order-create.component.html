@@ -1,0 +1,37 @@
+
+<div class="container">
+
+  <div class="container-fluid text-center">
+      <!-- Login form title -->
+      <h1>Orders</h1>
+  </div>
+<div class="order-form">
+  <h2>{{ isUpdating ? 'Update Order' : 'Create Order' }}</h2>
+
+  <form [formGroup]="orderForm" (ngSubmit)="submitForm()">
+    <div class="form-group ">
+      <label for="customerName">Customer Name</label>
+      <input type="text" id="customerName" formControlName="customerName" class="form-control"/>
+    </div>
+
+    <div class="form-group">
+      <label for="totalAmount">Total Amount</label>
+      <input type="number" id="totalAmount" formControlName="totalAmount" class="form-control"/>
+    </div>
+
+
+
+    <div class="form-group" >
+      <label for="selectedItems">Select Items</label>
+      <select id="selectedItems" formControlName="selectedItems" multiple class="form-control">
+        <option *ngFor="let item of allItems" [value]="item">{{ item.itemName +' |  '+  item.quantity + ' | ' + item.price }}</option>
+      </select>
+    </div>
+
+
+
+    <button type="submit">{{ isUpdating ? 'Update' : 'Create' }} Order</button>
+  </form>
+</div>
+
+</div>

@@ -9,6 +9,9 @@ import { MenuComponent } from './menu/menu.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { AdvertisementComponent } from './advertisement/advertisement.component';
+import { OrderComponent } from './order/order.component';
+import { OrderCreateComponent } from './order-create/order-create.component';
 
 const routes: Routes =
   [{ path: 'reservations', component: ReservationsComponent },
@@ -17,6 +20,10 @@ const routes: Routes =
   */
     { path: '', component: LandingComponent },
     { path: 'login', component: LoginComponent },
+    { path: 'orders', component: OrderComponent },
+    { path: 'order/create', component: OrderCreateComponent},
+    { path: 'order/update/:id', component: OrderCreateComponent},
+    { path: 'advertisement', component: AdvertisementComponent },
     { path: 'register', component: RegisterComponent },
   { path: 'locations', component: LocationsComponent },
   { path: 'about', component: AboutComponent },

@@ -15,7 +15,10 @@ import { SecondPageComponent } from './second-page/second-page.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
-
+import { AdvertisementComponent } from './advertisement/advertisement.component';
+import { OrderComponent } from './order/order.component';
+import { OrderCreateComponent } from './order-create/order-create.component';
+import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,12 +30,13 @@ import { RegisterComponent } from './register/register.component';
     HeaderComponent,
     ReservationsComponent,
     LocationsComponent,
-    SecondPageComponent, 
-    CheckoutComponent, LoginComponent, RegisterComponent
+    SecondPageComponent,
+    CheckoutComponent, LoginComponent, RegisterComponent, AdvertisementComponent, OrderComponent, OrderCreateComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule,
     FormsModule
   ],
   providers: [],
