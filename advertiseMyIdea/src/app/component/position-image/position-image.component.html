@@ -1,0 +1,115 @@
+<div class="container">
+
+  <div class="row" style="text-align: center">
+    <div class="col-md-6 offset-md-3">
+
+      <h1> Position Selector </h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <form>
+        <div class="form-group">
+          <label for="image">Select Image:</label>
+          <div class="input-group">
+            <div class="row">
+              <label class="col-form-label col-form-label-lg">Top</label>
+              <input type="file" class="custom-file-input" id="image">
+              
+            </div>
+            <div class="row">
+              <label class="col-form-label col-form-label-lg">Left</label>
+              <input type="file" class="custom-file-input" id="image">
+             
+            </div>
+            <div class="row">
+              <label class="col-form-label col-form-label-lg">Right</label>
+              <input type="file" class="custom-file-input" id="image">
+             
+            </div>
+            <div class="row">
+              <label class="col-form-label col-form-label-lg">Bottom</label>
+              <input type="file" class="custom-file-input" id="image">
+             
+            </div>
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="button">Upload</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <br />
+
+  <div class="row" style="text-align:center">
+    <div class="col-md-6 offset-md-3">
+
+      <h1> Preview</h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="/fourCorner">Four Corner </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/upandright">Up & Right</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/twosidebar">Left & Right</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <form (ngSubmit)="onSubmitForm()">
+
+        <h1 style=" text-align:center"> Save Add MetaData</h1>
+
+        <div class="row">
+          <label class="col-form-label col-form-label-lg">Choose Frequency Package</label>
+          <input type="text" class="form-control" placeholder="1,2,3..." name="inputValue1">
+
+        </div>
+        <div class="row">
+          <label class="col-form-label col-form-label-lg">Choose Day</label>
+          <input type="text" class="form-control" placeholder="Mon,Tue..." name="inputValue1">
+
+        </div>
+        <div class="row">
+          <label class="col-form-label col-form-label-lg">Choose Time</label>
+          <input type="text" class="form-control" placeholder=" 00:00 to 24:00" name="inputValue2">
+        </div>
+
+
+
+
+        <!-- Add this div for right alignment -->
+        <br />
+        <div class="row">
+          <button type="submit" class="btn btn-primary ">Submit</button>
+
+        </div>
+
+      </form>
+    </div>
+    <div>
+
+
+    </div>
+  </div>
+</div>

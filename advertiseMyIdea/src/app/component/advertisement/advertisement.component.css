@@ -1,0 +1,9 @@
+
+
+.video-player {
+  width: 100%; /* Video element takes 100% width of the container */
+  height: 100%; /* Video element takes 100% height of the container */
+  position: relative;
+  top: 0;
+  left: 0;
+}

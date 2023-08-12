@@ -1,0 +1,39 @@
+
+.d-flex {
+  display: flex;
+}
+
+.flex-item:nth-child(1) {
+  flex-basis: 80%;
+}
+
+
+
+.flex-item:nth-child(2) {
+  flex-basis: 20%;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Adjust the height as needed */
+}
+
+.row1 {
+  flex-grow: 1; /* Occupies 2/6th of the available space */
+  height: 20%;
+}
+
+  .row1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Adjust object-fit property as needed */
+  }
+
+.row2 {
+  flex-grow: 3; /* Occupies 1/6th of the available space */
+  height: 100%;
+}
+
+

@@ -1,0 +1,46 @@
+<div class="container">
+<div class="row"  style="text-align:right" >  <a  href="/positionImage"> Position Add </a></div>
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <form (ngSubmit)="onSubmitForm()">
+
+        <h1 style=" text-align:center"> Configure Image</h1>
+        <div class="row">
+          <label class="col-form-label col-form-label-lg">Caption line</label>
+          <input type="text" class="form-control" placeholder="Caption line" name="inputValue1" [(ngModel)]="inputValue1">
+
+        </div>
+        <div class="row">
+          <label class="col-form-label col-form-label-lg">style for image</label>
+          <input type="text" class="form-control" placeholder="style for image" name="inputValue2" [(ngModel)]="inputValue2">
+        </div>
+
+
+        <div class="row" style="align-items:center" *ngFor="let image of images , let i= index">
+          <legend class="col-form-label col-sm-3 " style="text-align:right">Image {{i +1}}</legend>
+          <div class="col-sm-9">
+            <input type="radio" name="selectedImage" [value]="image" [(ngModel)]="selectedImage">
+
+
+            <img [src]="image" alt="Image" width="200" height="150">
+          </div>
+
+
+        </div>
+
+          <!-- Add this div for right alignment -->
+        <br />
+        <div class="row" >
+          <button type="submit" class="btn btn-primary ">Submit</button>
+
+        </div>
+        
+      </form>
+      </div>
+    <div>
+      <app-image-text *ngIf="isSubmitted" [overlayTextValue]="overlayTextValue" [imagePath]="imagePath" [imageConfig]="imageConfig"  [imageColor]="imageColor"   ></app-image-text>
+    </div>
+
+
+</div>
+</div>
