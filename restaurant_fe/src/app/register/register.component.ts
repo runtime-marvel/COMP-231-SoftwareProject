@@ -7,25 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegisterComponent implements OnInit {
 
-
   constructor() { }
 
-
-
-
-  username: any;
-  password: any;
-
-
-
-  loginTitle = "Login";
-
-
+  email: string;
+  phoneNumber: string;
+  firstName: string;
+  lastName: string;
+  newPassword: string;
+  confirmPassword: string;
 
   ngOnInit(): void { }
 
-  login() {
-
+  register() {
+    // Handle the registration logic here, such as sending data to a server
+    // You can access the form field values like this.email, this.phoneNumber, etc.
+    // You can also perform validation and error handling here
   }
 
 }

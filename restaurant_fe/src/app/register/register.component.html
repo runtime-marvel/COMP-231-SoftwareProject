@@ -1,39 +1,63 @@
 <div class="container">
 
-  <div class="container-fluid text-center">
-      <!-- Login form title -->
-      <h1>Login Form</h1>
-  </div>
-
-  <div class="container-fluid-2 paddingX2 text-center align-items-center">
-
-      <!-- Login Form -->
-      <form (submit)="login()">
-          <!-- Username field -->
-          <div class="form-row clearfix text-center">
-              <div class="col-auto">
-                  <input ref-login type="text" class="form-control" placeholder="Username"
-                         [(ngModel)]="username">
-              </div>
-          </div>
-          <!-- Password field -->
-          <div class="form-row clearfix">
-              <div class="col-auto">
-                  <input ref-login type="password" class="form-control" placeholder="Password"
-                         [(ngModel)]="password">
-              </div>
-          </div>
-          <!-- Submit button -->
-          <button type="submit" class="btn btn-primary" [attr.disabled]="!username || !password">
-              Login
-          </button>
-
-          <p><a href="register"> Forgot password </a></p>
-      </form>
-
-  </div>
-  <div class="container-fluid text-center">
-      <!-- Login form title -->
-      <h3 ><a href="register" > Signup </a></h3>
-  </div>
+    <div class="container-fluid text-center">
+        <!-- Registration form title -->
+        <h1>Registration Form</h1>
+    </div>
+  
+    <div class="container-fluid-2 paddingX2 text-center align-items-center">
+  
+        <!-- Registration Form -->
+        <form (submit)="register()">
+            <!-- Email field -->
+            <div class="form-row clearfix text-center">
+                <div class="col-auto">
+                    <input ref-register type="email" class="form-control" placeholder="Email"
+                           [(ngModel)]="email">
+                </div>
+            </div>
+            <!-- Phone number field -->
+            <div class="form-row clearfix text-center">
+                <div class="col-auto">
+                    <input ref-register type="tel" class="form-control" placeholder="Phone Number"
+                           [(ngModel)]="phoneNumber">
+                </div>
+            </div>
+            <!-- First name field -->
+            <div class="form-row clearfix text-center">
+                <div class="col-auto">
+                    <input ref-register type="text" class="form-control" placeholder="First Name"
+                           [(ngModel)]="firstName">
+                </div>
+            </div>
+            <!-- Last name field -->
+            <div class="form-row clearfix text-center">
+                <div class="col-auto">
+                    <input ref-register type="text" class="form-control" placeholder="Last Name"
+                           [(ngModel)]="lastName">
+                </div>
+            </div>
+            <!-- Password field -->
+            <div class="form-row clearfix">
+                <div class="col-auto">
+                    <input ref-register type="password" class="form-control" placeholder="Password"
+                           [(ngModel)]="newPassword">
+                </div>
+            </div>
+            <!-- Confirm Password field -->
+            <div class="form-row clearfix">
+                <div class="col-auto">
+                    <input ref-register type="password" class="form-control" placeholder="Confirm Password"
+                           [(ngModel)]="confirmPassword">
+                </div>
+            </div>
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary" [attr.disabled]="!email || !phoneNumber || !firstName || !lastName || !newPassword || newPassword !== confirmPassword">
+                Register
+            </button>
+  
+            <p><a href="login"> Already have an account? Login </a></p>
+        </form>
+  
+    </div>
 </div>
